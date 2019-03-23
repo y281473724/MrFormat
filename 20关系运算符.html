@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    /*
+        通过关系运算符可以比较两个值之间的大小
+            如果关系成立则返回true，不成立则返回false
+        
+            >   大于
+            >=  大于等于
+            <   小于
+            <=  小于等于
+            
+        非数值的情况
+            1.对于非数值进行比较时，会将其转换为数字，再比较
+            2.如果符号两侧的值都是字符串，不会将其转换为数字进行比较
+                而是分别比较字符串中字符的Unicode编码
+                    一位一位进行比较，最后再比较长度
+                        可以利用这一特点对英文排序
+                        比较中文没有意义
+                如果比较两个字符串型数字，可能会得到不可预测的结果
+                    所以，在比较两个字符串型数字时，一定要转型
+            
+            任何值和NaN做任何比较都是false
+
+            
+    
+    
+    */
+    console.log(NaN != false);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

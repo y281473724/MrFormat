@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    /*
+    运算符也叫操作符
+        通过运算符可以对一个或多个值进行运算，并返回运算结果
+        比如，typeof就是运算符，可以来获得一个值的类型
+            它会将该值的类型以字符串的形式返回
+            
+        算术运算符
+            当对非Number类型的值进行运算时，会先转换成数值再进行运算
+                任何值和NaN做运算，都得NaN
+
+            +   可以对两个值进行加法运算，并返回结果
+                |-如果对两个字符串进行加法运算，则会拼串
+            特  |    -将两个字符串拼成一个字符串，并返回
+                |-任何的值和字符串做加法运算，都会先转换成字符串，再进行拼串
+            例  |    -可以利用这一特点，来将任一数据类型转换为String
+                |    -这是一种隐式的类型转换，由浏览器自动完成
+                |    -实际上它也是调用String()函数
+
+            -   可以对两个值进行减法运算，并返回结果
+            *   可以对两个值进行乘法运算，并返回结果
+            /   可以对两个值进行除法运算，并返回结果
+            %   可以对两个值进行取模（余数）运算，并返回结果
+
+            任何值做- * / 运算时，都会自动转换成Number
+                利用这一特点可以做隐式的类型转换
+                    减0，乘1，除1
+                    原理和Numer()一样，使用起来更简单
+    */
+    var a = 123;
+    var result = typeof a;
+    
+    console.log(typeof result);
+    console.log(result);
+
+    var str = "床前明月光，"+
+            "疑是地上霜，"+
+            "举头望明月，"+
+            "低头思故乡。";
+
+    console.log(str);
+
+    var c = 123;
+
+    //把c变成字符串
+    c = c + '';
+    console.log("c = " + c); 
+
+    result = 1 + 2 + '3';//'33'
+    result = '1' + 2 + 3;//'123'
+
+    result = 2*undefined;
+
+    console.log("result = " + result);
+    </script>
+
+
+
+    
+</head>
+<body>
+    
+</body>
+</html>

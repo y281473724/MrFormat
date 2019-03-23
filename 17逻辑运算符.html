@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    /*
+    js中为我们提供了三种逻辑运算符：
+        !   非
+            可以用来对一个布尔值进行取反操作
+                true-->false ; false-->true
+            如果对非布尔值进行运算，则会先转换成布尔值再取反
+                利用该特点，对任意值取两次反，来将其转换为布尔值
+                原理和Boolean()函数一样
+
+        &&  与
+            可以对符号两侧的值进行逻辑与运算，并返回结果
+            运算规则：
+                两个值中只要有一个false就返回false
+                    只有两个值都为true才会返回true
+                JS中的'与'属于短路的'与'
+                    如果第一个是false，则不会判断第二个
+                    如果第一个为true，则会判断第二个
+
+        ||  或
+            运算规则：
+                两个值中只要有一个true就返回true
+                    只有两个值都为false才会返回false
+                JS中的“或”属于短路的“或”
+                    如果第一个值为true，则不会判断第二个
+                    如果第一个值为false，则会判断第二个
+    
+    */
+        var a = true;
+        a = !!!a;
+        document.write('a = '+a + '\n');
+
+        var b = 10;
+        b = !!b;
+        document.write('b = '+b);
+
+        var result = true && false;
+        document.write('result = '+result)
+
+        //第一个为真，会判断第二个
+        true && alert("你看我")
+
+        //第一个为假，不会判断第二个
+        result1 = false && alert("你看我")
+        console.log('result1 = '+ result1)
+
+        //只要有一个true就返回true
+        result2 = true || false
+        console.log('result2 = ' + result2)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
